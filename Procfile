@@ -1,1 +1,1 @@
-
+worker: python MegaBot.py 
