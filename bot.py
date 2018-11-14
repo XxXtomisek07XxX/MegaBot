@@ -44,6 +44,6 @@ async def hosting():
 async def discordbot():
   await bot.say('https://discord.gg/8dbfhWU')
 
-client.run(os.getenv('NDkwOTQxOTY2Mjk3NTk1OTE0.DsJGrg.t0hx5ERaJrO4fvpZIkm4wGlft1g'))
+client.run(os.getenv("BOT_TOKEN"))
 
 
