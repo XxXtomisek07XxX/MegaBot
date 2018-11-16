@@ -1,5 +1,5 @@
 import discord
-from.discord.ext.commands import Bot
+from discord.ext.commands import Bot
 from discord.ext import commands
 from discord.ext.commands.cooldowns import BucketType
 
@@ -11,7 +11,7 @@ import os
 import time
 
 import discord
-from.discord.ext import commands
+from discord.ext import commands
 import asyncio
 
 bot=commands.Bot(command_prefix='/')
