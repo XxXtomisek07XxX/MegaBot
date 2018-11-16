@@ -31,10 +31,10 @@ async def fakeban():
 async def support():
   await client.say('cms.megabot-support.webnode.cz')
 
-@client.command()
-async def discord():
-  await client.say('https://discord.gg/9uerN5z)
-                   
+
+
+
+                 
 
 
 
