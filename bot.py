@@ -17,17 +17,17 @@ import time
 bot=commands.Bot(command_prefix='/')
 
 
-@client.event
+@bot.event
 async def on_ready():
   print('The bot is ready!')
   print(bot.user.name)
   print(bot.user.id)
   
-@client.command()
+@bot.command()
 async def fakeban():
   await client.say('Dostal/a jsi ban! Ha jen si dělám standu :D')
   
-@client.command()
+@bot.command()
 async def support():
   await client.say('cms.megabot-support.webnode.cz')
 
@@ -38,11 +38,11 @@ async def support():
 
 
 
-@client.command()
+@bot.command()
 async def hosting():
   await client.say('****Zatím Žádný!****')
   
-@client.command()
+@bot.command()
 async def discordbot():
   await client.say('https://discord.gg/8dbfhWU')
 
