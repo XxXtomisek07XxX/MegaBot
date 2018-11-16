@@ -33,8 +33,10 @@ async def support():
 
 @client.command()
 async def discord():
-  await client.say('https://discord.gg/9uerN5z')
-N5z')
+  await client.say('https://discord.gg/9uerN5z)
+                   
+
+
 
 @client.command()
 async def hosting():
