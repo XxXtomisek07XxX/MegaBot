@@ -10,12 +10,12 @@ import random
 import os 
 import time
 
-import discord
-from discord.ext import commands
-import asyncio
+
+
+
 
 bot=commands.Bot(command_prefix='/')
-client.remove_command('help')
+
 
 @client.event
 async def on_ready():
