@@ -73,7 +73,7 @@ async def help():
                 """,
 )
 
-          color = discord.Color.green()
+
 
           await bot.say(embed=embed) 
 
