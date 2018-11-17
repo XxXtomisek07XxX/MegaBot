@@ -50,7 +50,29 @@ async def hosting():
 async def discordbot():
   await bot.say('https://discord.gg/8dbfhWU')
   
-
+@bot.command(pass_context=True)
+async def help():
+        embed = discord.Embed(
+                 title = "Help"
+                 description = """
+                 Zde jsou všechny příkazy:
+                 /fakeban 
+                 Dostaneš ban xd
+                  /Support
+                 ------ Popisek------
+                 /hosting
+                 Ukáže ti to kde jostujeme bota.
+                 /discordbot
+                 -----------Popisek---------
+                Příští update:
+                /kick
+                Vyhodí člověka ze serveru
+                /ban
+                Zabanuje člověka
+                """
+          color = discord.Color.green()
+)
+          await bot.say(embed=embed) 
 
       
         
