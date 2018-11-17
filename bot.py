@@ -40,7 +40,11 @@ async def support():
 
 @bot.command()
 async def hosting():
-  await bot.say('****Zatím Žádný!****')
+  await bot.say('****GitHub****
+               
+                https://github.com/XxXtomisek07XxX/MegaBot')
+                
+
   
 @bot.command()
 async def discordbot():
