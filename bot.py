@@ -53,7 +53,7 @@ async def discordbot():
 @bot.command(pass_context=True)
 async def help():
         embed = discord.Embed(
-                 title = "Help"
+                 title = "Help",
                  description= """
 
                  Zde jsou všechny příkazy:
@@ -70,7 +70,7 @@ async def help():
                 Vyhodí člověka ze serveru
                 /ban
                 Zabanuje člověka
-                """
+                """,
           color = discord.Color.green()
 )
           await bot.say(embed=embed) 
