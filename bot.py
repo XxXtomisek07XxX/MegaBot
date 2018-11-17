@@ -54,7 +54,8 @@ async def discordbot():
 async def help():
         embed = discord.Embed(
                  title = "Help"
-                 description = """
+                 description= """
+
                  Zde jsou všechny příkazy:
                  /fakeban 
                  Dostaneš ban xd
