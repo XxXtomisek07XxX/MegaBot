@@ -25,11 +25,11 @@ async def on_ready():
   
 @bot.command()
 async def fakeban():
-  await client.say('Dostal/a jsi ban! Ha jen si dělám standu :D')
+  await bot.say('Dostal/a jsi ban! Ha jen si dělám standu :D')
   
 @bot.command()
 async def support():
-  await client.say('cms.megabot-support.webnode.cz')
+  await bot.say('cms.megabot-support.webnode.cz')
 
 
 
@@ -40,12 +40,12 @@ async def support():
 
 @bot.command()
 async def hosting():
-  await client.say('****Zatím Žádný!****')
+  await bot.say('****Zatím Žádný!****')
   
 @bot.command()
 async def discordbot():
-  await client.say('https://discord.gg/8dbfhWU')
+  await bot.say('https://discord.gg/8dbfhWU')
 
-client.run(os.getenv("BOT_TOKEN"))
+bot.run(os.getenv("BOT_TOKEN"))
 
 
