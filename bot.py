@@ -40,9 +40,9 @@ async def support():
 
 @bot.command()
 async def hosting():
-  await bot.say('****GitHub****
+  await bot.say('****https://github.com/XxXtomisek07XxX/MegaBot')
                
-                https://github.com/XxXtomisek07XxX/MegaBot')
+   
                 
 
   
