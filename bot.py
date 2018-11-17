@@ -71,7 +71,7 @@ async def help():
                 Zabanuje člověka
                 """
           color = discord.Color.green()
-)
+
           await bot.say(embed=embed)  
 
 bot.run(os.getenv("BOT_TOKEN"))
