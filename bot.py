@@ -85,7 +85,8 @@ async def kick(ctx,user:discord.Member):
         return
    
     
-@client.command(pass_context=True)  
+
+@bot.command(pass_context=True)  
 @commands.has_permissions(ban_members=True) 
 @commands.check(is_admin)
 async def ban(ctx,user:discord.Member):
