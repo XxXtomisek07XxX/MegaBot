@@ -215,13 +215,13 @@ async def clear(ctx, number):
        
     try:
         await bot.delete_messages(mgs)          
-        await bot.say(str(number)+' messages deleted')
+        await bot.say(str(number)+' Zprávy Smazány')
      
     except discord.Forbidden:
         await bot.say(embed=Forbidden)
         return
     except discord.HTTPException:
-        await bot.say('clear failed.')
+        await bot.say('clear se Nepodařilo.')
         return         
    
  
