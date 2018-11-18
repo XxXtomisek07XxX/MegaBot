@@ -183,7 +183,7 @@ async def meme():
              
 
    
-  await bot.say(random.choice(choices))
+   await bot.say(random.choice(choices))
             
                
 
