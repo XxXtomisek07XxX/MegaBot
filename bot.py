@@ -72,7 +72,7 @@ async def help():
 async def kick(ctx,user:discord.Member):
 
     if user.server_permissions.kick_members:
-        await bot.say('**Nemáš Oprávnění na kick!**')
+        await bot.say('**Nemáš Oprávnění na kick a nebo je dotyčný Administrátor**')
         return
     
     try:
