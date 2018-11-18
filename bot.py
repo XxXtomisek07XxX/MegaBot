@@ -179,7 +179,7 @@ async def mute(ctx, member: discord.Member):
 async def meme():   
    import random
 
-  choices = ["https://goo.gl/images/RqdXBX","https://goo.gl/images/8uL2L3"]
+   choices = ["https://goo.gl/images/RqdXBX","https://goo.gl/images/8uL2L3"]
              
 
    
