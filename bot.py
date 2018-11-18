@@ -62,8 +62,8 @@ async def help():
 ****General****
 
 ``` support
-    hosting
-    discordbot``` """)
+ hosting
+ discordbot``` """)
     
    
     
