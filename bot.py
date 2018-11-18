@@ -65,7 +65,7 @@ async def help():
  hosting
  discordbot``` """)
     
-   async def serverinfo(
+   
     
 
   
