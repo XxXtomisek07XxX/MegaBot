@@ -56,9 +56,11 @@ async def help():
         await bot.say("""****__prefix:/__****
 
 ****Zábava****
+
 ```fakeban```
 
 ****General****
+
 ```support
 hosting
 discordbot```""")
