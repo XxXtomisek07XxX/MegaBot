@@ -217,10 +217,10 @@ async def meme():
 
 
 
-@bot.command(pass_context = True)
-@commands.has_permissions(manage_messages=True)  
 
-async def clear(ctx, number):   
+@commands.h
+
+
 
 
         
