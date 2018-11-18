@@ -57,13 +57,13 @@ async def help():
 
 ****Zábava****
 
-```fakeban```
+```/fakeban```
 
 ****General****
 
 ```support
 hosting
-discordbot```""")
+discordbot``` """)
 
 
 
