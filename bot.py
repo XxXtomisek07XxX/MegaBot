@@ -217,7 +217,7 @@ async def meme():
 
 
 
-     @client.command(pass_context = True)
+@bot.command(pass_context = True)
 @commands.has_permissions(manage_messages=True)  
 
 async def clear(ctx, number):   
