@@ -62,9 +62,11 @@ async def discordbot():
   
 @bot.command()
 async def help():
-        await bot.say("""****__prefix:/__****
+        await bot.say("""****__Nápověda :mailbox_with_mail:__****
         
-      odesílám: :mailbox_with_mail:
+        ****Prefix:/****
+        
+      
 
 ****Zábava**** :joy:
 
