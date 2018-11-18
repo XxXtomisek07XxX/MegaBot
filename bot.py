@@ -20,6 +20,9 @@ bot.remove_command('help')
 
 @bot.event
 async def on_ready():
+     await bot.change_presence(game=discord.Game(name= "TEXT"))
+         print("The bot is ready end connected to the discord!")
+
   await client.change_presence(game=discord.Game(name= /help
   print('The bot is ready!')
   print(bot.user.name)
