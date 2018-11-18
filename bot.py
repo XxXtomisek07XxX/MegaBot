@@ -97,7 +97,7 @@ async def ban(ctx,user:discord.Member):
 
     try:
         await bot.ban(user)
-        await client.say(user.name+' byl Zabanován. Měj se '+user.name+'!')
+        await bot.say(user.name+' byl Zabanován. Měj se '+user.name+'!')
 
     except discord.Forbidden:
 
