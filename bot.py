@@ -70,7 +70,8 @@ async def help():
 
 ****Zábava**** :joy:
 
-``` fakeban```
+``` fakeban
+ meme```
 
 ****General**** :pencil:
 
@@ -84,7 +85,9 @@ async def help():
  
 ``` ban
  mute
- kick ``` """)
+ kick
+ unban
+ warn``` """)
     
     
 @bot.command(pass_context=True)  
