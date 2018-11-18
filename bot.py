@@ -72,12 +72,12 @@ async def help():
 async def kick(ctx,user:discord.Member):
 
     if user.server_permissions.kick_members:
-        await bot.say('**He is mod/admin and i am unable to kick him/her**')
+        await bot.say('**Nemáš Oprávnění na kick!**')
         return
     
     try:
         await bot.kick(user)
-        await bot.say(user.name+' was kicked. Good bye '+user.name+'!')
+        await bot.say(user.name+' byl kicknut. Měj se '+user.name+'!')
         await bot.delete_message(ctx.message)
 
     except discord.Forbidden:
