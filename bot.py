@@ -63,7 +63,8 @@ async def help():
 
 ``` support
  hosting
- discordbot ```
+ discordbot
+ ping```
  
  
  ****Administrátor****
@@ -119,7 +120,11 @@ async def ban(ctx,user:discord.Member):
     
 
 
-
+@client.command(pass_context=True)
+async def ping(ctx):
+    t = await client.say('Pong!')
+    ms = (t.timestamp-ctx.message.timestamp).total_seconds() * 1000
+    await client.edit_message(t, new_content=':ping_pong: Pong! Vzal: {}ms'.format(int(ms)))
       
 
 
