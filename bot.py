@@ -69,8 +69,8 @@ async def help():
  ****Administrátor****
  
 ``` ban
-    mute
-    kick ``` """)
+ mute
+ kick ``` """)
     
     
 @bot.command(pass_context=True)  
