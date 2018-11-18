@@ -31,7 +31,7 @@ async def fakeban():
 @bot.command()
 async def support():
   await bot.say('cms.megabot-support.webnode.cz')
-
+ 
 
 
 
@@ -61,9 +61,9 @@ async def help():
 
 ****General****
 
-```support
- hosting
- discordbot``` """)
+``` support
+  hosting
+  discordbot``` """)
     
    
     
