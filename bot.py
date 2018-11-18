@@ -74,6 +74,7 @@ async def help():
                 """,
 )
 
+               await bot.say(embed=Embed)
 
 
         
