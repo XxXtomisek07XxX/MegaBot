@@ -66,7 +66,7 @@ async def help():
  discordbot``` """)
     
     
-    @bot.command(pass_context=True)  
+@bot.command(pass_context=True)  
 @commands.has_permissions(kick_members=True)     
 @commands.check(is_mod)
 async def kick(ctx,user:discord.Member):
