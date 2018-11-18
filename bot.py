@@ -218,7 +218,7 @@ async def meme():
 
 
 
-@commands.h
+
 
 
 
