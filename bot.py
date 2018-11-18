@@ -53,14 +53,19 @@ async def discordbot():
   
 @bot.command()
 async def help():
-        await bot.say("""prefix:/
+        await bot.say("""****__prefix:/__****
 
+****Zábava****
+```fakeban```
 
-support
+****General****
+```support
 hosting
-fakeban
-discordbot
-""")
+discordbot```""")
+
+
+
+
 
 
       
