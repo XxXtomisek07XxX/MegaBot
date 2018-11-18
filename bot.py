@@ -63,7 +63,14 @@ async def help():
 
 ``` support
  hosting
- discordbot``` """)
+ discordbot ```
+ 
+ 
+ ****Administrátor****
+ 
+``` ban
+mute
+kick ``` """)
     
     
 @bot.command(pass_context=True)  
