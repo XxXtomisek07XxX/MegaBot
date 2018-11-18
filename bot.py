@@ -65,7 +65,7 @@ async def help():
 hosting
 discordbot``` """)
     
-   async def serverinfo(ctx):
+   async def serverinfo():
     '''Displays Info About The Server!'''
 
     server = ctx.message.server
