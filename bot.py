@@ -85,6 +85,26 @@ async def kick(ctx,user:discord.Member):
         return
    
     
+@client.command(pass_context=True)  
+@commands.has_permissions(ban_members=True) 
+@commands.check(is_admin)
+async def ban(ctx,user:discord.Member):
+
+    if user.server_permissions.ban_members:
+        await client.say('**Nemáš Právo na ban a nebo je dotyčný Administrátor!**')
+        return
+
+    try:
+        await client.ban(user)
+        await client.say(user.name+ byl Zabanován. Měj se '+user.name+'!')
+
+    except discord.Forbidden:
+
+        await client.say('Permission denied.')
+        return
+    except discord.HTTPException:
+        await client.say('Ban nebyl Úspěšný.')
+        return		 
 
   
 
