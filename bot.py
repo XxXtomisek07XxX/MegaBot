@@ -202,7 +202,7 @@ async def meme():
    await bot.say(random.choice(choices))
             
                
-@client.command(pass_context = True)
+@bot.command(pass_context = True)
 @commands.has_permissions(manage_messages=True)  
 @commands.check(is_mod)
 async def clear(ctx, number):
@@ -214,18 +214,18 @@ async def clear(ctx, number):
         mgs.append(x)            
        
     try:
-        await client.delete_messages(mgs)          
-        await client.say(str(number)+' messages deleted')
+        await bot.delete_messages(mgs)          
+        await bot.say(str(number)+' messages deleted')
      
     except discord.Forbidden:
-        await client.say(embed=Forbidden)
+        await bot.say(embed=Forbidden)
         return
     except discord.HTTPException:
-        await client.say('clear failed.')
+        await bot.say('clear failed.')
         return         
    
  
-    await client.delete_messages(mgs) 
+    await bot.delete_messages(mgs) 
                   
 
                
