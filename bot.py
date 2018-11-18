@@ -51,30 +51,40 @@ async def hosting():
 async def discordbot():
   await bot.say('https://discord.gg/8dbfhWU')
   
-@bot.command(pass_context=True)
+@bot.command()
 async def help():
-        embed = discord.Embed(
-                 title = "Help",
-                 description= """
+        await bot.say("""prefix:/
 
-                 Zde jsou všechny příkazy:
-                 /fakeban 
-                 Dostaneš ban xd
-                  /Support
-                 ------ Popisek------
-                 /hosting
-                 Ukáže ti to kde jostujeme bota.
-                 /discordbot
-                 -----------Popisek---------
-                Příští update:
-                /kick
-                Vyhodí člověka ze serveru
-                /ban
-                Zabanuje člověka
-                """,
-)
 
-               await bot.say(embed=embed)
+support
+hosting
+fakeban
+discordbot
+""")
+
+
+      
+                
+             
+
+               
+               
+
+                  
+
+               
+                
+              
+                
+    
+                
+              
+           
+               
+
+
+
+        
 
 
         
