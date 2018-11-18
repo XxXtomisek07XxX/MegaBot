@@ -128,7 +128,21 @@ async def ping(ctx):
       
 
 
-    
+    @bot.command(pass_context = True)
+async def warn(ctx, *, member : discord.Member = None):
+    if not ctx.message.author.server_permissions.administrator:
+        return
+ 
+    if not member:
+        return await bot.say(ctx.message.author.mention +  " Označ Uživatele!")
+    try:
+        await bot.warn(member)
+    except Exception as e:
+        if 'Privilege is too low' in str(e):
+            return await bot.say("Dostal jsi Warn!")
+ 
+    embed = discord.Embed(description = "%s Dostal jsi warn!"%member.name, color = 0xF00000)
+    return await bot.say(embed = embed)
    
 
    
