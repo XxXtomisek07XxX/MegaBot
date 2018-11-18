@@ -57,7 +57,7 @@ async def help():
 
 ****Zábava****
 
-```fakeban```
+``` fakeban```
 
 ****General****
 
