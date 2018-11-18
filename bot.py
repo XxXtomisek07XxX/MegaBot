@@ -204,7 +204,7 @@ async def meme():
                
 @bot.command(pass_context = True)
 @commands.has_permissions(manage_messages=True)  
-@commands.check(is_mod)
+
 async def clear(ctx, number):
  
     if ctx.message.author.server_permissions.manage_messages:
