@@ -124,7 +124,7 @@ async def ban(ctx,user:discord.Member):
 async def ping(ctx):
     t = await bot.say('Pong!')
     ms = (t.timestamp-ctx.message.timestamp).total_seconds() * 1000
-    await bot.edit_message(t, new_content=':ping_pong: Pong! Vzal: {}ms'.format(int(ms)))
+    await bot.edit_message(t, new_content=':ping_pong: Ping: {}ms'.format(int(ms)))
       
 
 
