@@ -23,7 +23,7 @@ async def on_ready():
      await bot.change_presence(game=discord.Game(name= "/help"))
         
 
-  a
+  
   print('The bot is ready!')
   print(bot.user.name)
   print(bot.user.id)
