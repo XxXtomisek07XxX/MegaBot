@@ -55,11 +55,11 @@ async def discordbot():
 async def help():
         await bot.say("""****__prefix:/__****
 
-****Zábava****
+****Zábava**** :joy:
 
 ``` fakeban```
 
-****General****
+****General**** :pencil:
 
 ``` support
  hosting
@@ -67,7 +67,7 @@ async def help():
  ping```
  
  
- ****Administrátor****
+ ****Administrátor**** :key:
  
 ``` ban
  mute
