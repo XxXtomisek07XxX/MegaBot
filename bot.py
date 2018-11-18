@@ -89,7 +89,7 @@ discordbot``` """)
     join.add_field(name = '__Roles (%s)__'%str(role_length), value = roles);
     join.set_footer(text ='Created: %s'%time);
 
-    return await client.say(embed = join);
+    return await bot.say(embed = join);
 
 
 
