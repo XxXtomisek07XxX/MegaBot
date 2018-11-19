@@ -238,7 +238,7 @@ async def removemod(ctx, user: discord.Member):
     await bot.remove_roles(user, role)
     await bot.delete_message(ctx.message)
 
-async def serverinfo(ctx):
+async def server(ctx):
     '''Displays Info About The Server!'''
 
     server = ctx.message.server
