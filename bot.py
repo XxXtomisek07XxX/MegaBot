@@ -266,6 +266,8 @@ async def server(ctx):
     return await bot.say(embed = join);
 
 
+
+    
 async def unban(ctx):
     ban_list = await bot.get_bans(ctx.message.server)
 
@@ -286,6 +288,26 @@ async def unban(ctx):
     except discord.HTTPException:
         await bot.say('unban se nepovedl .')
         return		                  
+                
+              
+   
+    
+
+   
+  
+
+       
+            
+       
+   
+    
+        
+    
+       
+     
+   
+       
+      	                  
                 
               
                 
