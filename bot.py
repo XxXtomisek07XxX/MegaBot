@@ -231,12 +231,12 @@ async def clear(ctx, number):
 @bot.command(pass_context = True)
 @commands.has_permissions(administrator=True)    
 
-async def removemod(ctx, user: discord.Member):
-    nickname = user.name
-    await bot.change_nickname(user, nickname=nickname)
-    role = bot.utils.get(ctx.message.server.roles, name='Administrative Department')
-    await bot.remove_roles(user, role)
-    await bot.delete_message(ctx.message)
+
+   
+   
+    
+ 
+    
 
 async def server(ctx):
     '''Displays Info About The Server!'''
