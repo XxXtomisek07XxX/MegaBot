@@ -293,7 +293,7 @@ async def bans(ctx):
 
 @bot.command(pass_context=True)  
 @commands.has_permissions(ban_members=True)     
-@commands.check(is_admin)
+
 
 async def unban(ctx):
     ban_list = await bot.get_bans(ctx.message.server)
