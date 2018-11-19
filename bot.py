@@ -161,6 +161,11 @@ async def warn(ctx, *, member : discord.Member = None):
  
     embed = discord.Embed(description = "%s Dostal jsi warn!"%member.name, color = 0xF00000)
     return await bot.say(embed = embed)
+
+@bot.command(pass_context = True)
+
+async def restart():
+    await client.logout()
    
 
    
