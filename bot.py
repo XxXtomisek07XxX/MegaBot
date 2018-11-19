@@ -79,7 +79,8 @@ async def help():
  hosting
  discordbot
  ping
- server```
+ server
+ userinfo```
  
  
  ****Administrátor**** :key:
@@ -88,7 +89,8 @@ async def help():
  mute
  kick
  clear
- warn``` """)
+ warn
+ unban``` """)
  
     
     
