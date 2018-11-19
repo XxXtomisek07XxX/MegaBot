@@ -304,7 +304,7 @@ async def unban(ctx):
     # Unban last banned user
     if not ban_list:
     	
-        await bot.say('Ban list is empty.')
+        await bot.say('Ban list je Prázdný!.')
         return
     try:
         await bot.unban(ctx.message.server, ban_list[-1])
