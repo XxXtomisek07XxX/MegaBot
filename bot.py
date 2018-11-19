@@ -265,29 +265,39 @@ async def server(ctx):
 
     return await bot.say(embed = join);
 
+@bot.command(pass_context = True)
+@commands.has_permissions(administrator=True) 
+async def bans(ctx):
+    '''Gets A List Of Users Who Are No Longer With us'''
+    x = await bot.get_bans(ctx.message.server)
+    x = '\n'.join([y.name for y in x])
+    embed = discord.Embed(title = "List of The Banned Idiots", description = x, color = 0xFFFFF)
+    return await bot.say(embed = embed)
+
+
 
 
     
-async def unban(ctx):
-    ban_list = await bot.get_bans(ctx.message.server)
 
-    # Show banned users
-    await bot.say("Banlist:\n{}".format("\n".join([user.name for user in ban_list])))
+    
 
-    # Unban last banned user
-    if not ban_list:
+    
+
+
+    
+  
     	
-        await bot.say('Ban list je Prázdný.')
-        return
-    try:
-        await bot.unban(ctx.message.server, ban_list[-1])
-        await bot.say('Unbanovaný user: `{}`'.format(ban_list[-1].name))
-    except discord.Forbidden:
-        await bot.say('Nemáš práva a nebo Dotyčný nemá ban!.')
-        return
-    except discord.HTTPException:
-        await bot.say('unban se nepovedl .')
-        return		                  
+        
+    
+   
+      
+        
+    
+       
+    
+   
+        
+       		                  
                 
               
    
