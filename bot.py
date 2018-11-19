@@ -35,7 +35,7 @@ async def on_ready():
   
 @bot.command()
 async def fakeban():
-  await bot.say('Dostal/a jsi ban! Ha jen si dělám standu :D')
+  await bot.say('Dostal/a jsi ban! Ha jen si dělám srandu :D')
   
 @bot.command()
 async def support():
