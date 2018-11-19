@@ -293,7 +293,7 @@ async def bans(ctx):
 
 
 @bot.command(pass_context = True)
-async def unban(ctx, member: discord.Member):
+async def ban(ctx, member: discord.Member):
      if ctx.message.author.server_permissions.administrator or ctx.message.author.id == '194151340090327041':
         await bot.unban(member)
         embed=discord.Embed(title="User Byl zabanován!", description="{0} byl unbanován od  {1}!".format(member, ctx.message.author), color=0xff00f6)
