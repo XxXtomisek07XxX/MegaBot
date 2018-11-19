@@ -90,7 +90,8 @@ async def help():
  kick
  clear
  warn
- unban``` """)
+ unban
+ bans``` """)
  
     
     
