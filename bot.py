@@ -256,12 +256,12 @@ async def server(ctx):
     r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
     join = discord.Embed(description= '%s '%(str(server)),title = 'Server Name', color = discord.Color((r << 16) + (g << 8) + b));
     join.set_thumbnail(url = server.icon_url);
-    join.add_field(name = '__Owner__', value = str(server.owner) + '\n' + server.owner.id);
+    join.add_field(name = '__Majitel Serveru__', value = str(server.owner) + '\n' + server.owner.id);
     join.add_field(name = '__ID__', value = str(server.id))
-    join.add_field(name = '__Member Count__', value = str(server.member_count));
+    join.add_field(name = '__Lidé__', value = str(server.member_count));
     join.add_field(name = '__Text/Voice Channels__', value = str(channelz));
-    join.add_field(name = '__Roles (%s)__'%str(role_length), value = roles);
-    join.set_footer(text ='Created: %s'%time);
+    join.add_field(name = '__Role (%s)__'%str(role_length), value = roles);
+    join.set_footer(text ='Vytvořeno: %s'%time);
 
     return await bot.say(embed = join);
 
