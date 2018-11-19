@@ -271,7 +271,7 @@ async def bans(ctx):
     '''Gets A List Of Users Who Are No Longer With us'''
     x = await bot.get_bans(ctx.message.server)
     x = '\n'.join([y.name for y in x])
-    embed = discord.Embed(title = "List of The Banned Idiots", description = x, color = 0xFFFFF)
+    embed = discord.Embed(title = "List Zabanovaných", description = x, color = 0xFFFFF)
     return await bot.say(embed = embed)
 
 
