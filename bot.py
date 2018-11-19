@@ -78,7 +78,8 @@ async def help():
 ``` support
  hosting
  discordbot
- ping```
+ ping
+ server```
  
  
  ****Administrátor**** :key:
