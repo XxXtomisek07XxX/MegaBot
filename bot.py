@@ -87,8 +87,8 @@ async def help():
  mute
  kick
  clear
- warn
- removemod``` """)
+ warn``` """)
+ 
     
     
 @bot.command(pass_context=True)  
