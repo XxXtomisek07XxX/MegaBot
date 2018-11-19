@@ -275,16 +275,16 @@ async def unban(ctx):
     # Unban last banned user
     if not ban_list:
     	
-        await client.say('Ban list je Prázdný.')
+        await bot.say('Ban list je Prázdný.')
         return
     try:
-        await client.unban(ctx.message.server, ban_list[-1])
-        await client.say('Unbanovaný user: `{}`'.format(ban_list[-1].name))
+        await bot.unban(ctx.message.server, ban_list[-1])
+        await bot.say('Unbanovaný user: `{}`'.format(ban_list[-1].name))
     except discord.Forbidden:
-        await client.say('Nemáš práva a nebo Dotyčný nemá ban!.')
+        await bot.say('Nemáš práva a nebo Dotyčný nemá ban!.')
         return
     except discord.HTTPException:
-        await client.say('unban se nepovedl .')
+        await bot.say('unban se nepovedl .')
         return		                  
                 
               
