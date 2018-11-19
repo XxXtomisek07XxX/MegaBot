@@ -308,12 +308,12 @@ async def unban(ctx):
         return
     try:
         await bot.unban(ctx.message.server, ban_list[-1])
-        await bot.say('Unbanned user: `{}`'.format(ban_list[-1].name))
+        await bot.say('Unbanovaný Hráč: `{}`'.format(ban_list[-1].name))
     except discord.Forbidden:
-        await bot.say('Permission denied.')
+        await bot.say('Nemáš práva.')
         return
     except discord.HTTPException:
-        await bot.say('unban failed.')
+        await bot.say('unban se nepovedl.')
         return
                
         	      	 		 		  
