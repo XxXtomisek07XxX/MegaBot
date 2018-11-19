@@ -291,6 +291,34 @@ async def bans(ctx):
     embed = discord.Embed(title = "List Zabanovaných", description = x, color = 0xFFFFF)
     return await bot.say(embed = embed)
 
+@bot.command(pass_context=True)  
+@commands.has_permissions(ban_members=True)     
+@commands.check(is_admin)
+
+async def unban(ctx):
+    ban_list = await bot.get_bans(ctx.message.server)
+
+    # Show banned users
+    await bot.say("Ban list:\n{}".format("\n".join([user.name for user in ban_list])))
+
+    # Unban last banned user
+    if not ban_list:
+    	
+        await bot.say('Ban list is empty.')
+        return
+    try:
+        await bot.unban(ctx.message.server, ban_list[-1])
+        await bot.say('Unbanned user: `{}`'.format(ban_list[-1].name))
+    except discord.Forbidden:
+        await bot.say('Permission denied.')
+        return
+    except discord.HTTPException:
+        await bot.say('unban failed.')
+     return
+               
+        	      	 		 		  
+
+
 
 
 
