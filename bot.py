@@ -321,7 +321,16 @@ async def unban(ctx):
                
         	      	 		 		  
 
-
+@bot.command(pass_context = True)
+async def unmute(ctx, member: discord.Member):
+     if ctx.message.author.server_permissions.administrator or ctx.message.author.id == '194151340090327041':
+        role = discord.utils.get(member.server.roles, name='Muted')
+        await bot.remove_roles(member, role)
+        embed=discord.Embed(title="User Byl Odmutnut!", description="{0} Byl Unmutnut {1}!".format(member, ctx.message.author), color=0xff00f6)
+        await bot.say(embed=embed)
+     else:
+        embed=discord.Embed(title="Permission Denied.", description="Nemáš na Unmute Práva!.", color=0xff00f6)
+        await bot.say(embed=embed)
 
 
 
