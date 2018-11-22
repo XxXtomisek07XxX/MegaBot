@@ -182,6 +182,11 @@ async def userinfo(ctx, user: discord.Member):
     embed.set_thumbnail(url=user.avatar_url)
     await bot.say(embed=embed)
 
+@bot.command(pass_context = True)
+@commands.has_permissions(manage_nicknames=True)     
+async def setnick(ctx, user: discord.Member, *, nickname):
+    await bot.change_nickname(user, nickname)
+    await bot.delete_message(ctx.message)
    
 
    
