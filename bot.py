@@ -71,7 +71,8 @@ async def help():
 ****Zábava**** :joy:
 
 ``` fakeban
- meme```
+ meme
+ say```
 
 ****General**** :pencil:
 
@@ -88,7 +89,7 @@ async def help():
 ``` ban
  mute
  kick
- clear
+ clear/prune
  warn
  unban
  bans
@@ -362,6 +363,30 @@ async def say(ctx, *, msg = None):
 
     
 
+async def prune(ctx, number):
+ 
+    if ctx.message.author.server_permissions.manage_messages:
+         mgs = [] #Empty list to put all the messages in the log
+         number = int(number) #Converting the amount of messages to delete to an integer
+    async for x in bot.logs_from(ctx.message.channel, limit = number+1):
+        mgs.append(x)            
+       
+    try:
+        await bot.delete_messages(mgs)          
+        await bot.say(str(number)+' Zprávy Smazány')
+     
+    except discord.Forbidden:
+        await bot.say(embed=Forbidden)
+        return
+    except discord.HTTPException:
+        await bot.say('clear se Nepodařilo.')
+        return         
+   
+ 
+    await bot.delete_messages(mgs) 
+                  
+@bot.command(pass_context = True)
+@commands.has_permissions(administrator=True)    
 
     
   
