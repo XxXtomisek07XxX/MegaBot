@@ -39,7 +39,7 @@ async def fakeban():
   
 @bot.command()
 async def support():
-  await bot.say('cms.megabot-support.webnode.cz')
+  await bot.say('megabot-support.webnode.cz')
  
 
 
