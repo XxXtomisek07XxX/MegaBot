@@ -229,9 +229,9 @@ async def meme():
               
 @bot.command()
 async def dog():
-     import random 
+   import random 
      
-     choices = ["https://goo.gl/images/phu7fV"]
+   choices = ["https://goo.gl/images/phu7fV"]
              
 
    
