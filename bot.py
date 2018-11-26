@@ -232,11 +232,11 @@ async def mute(ctx, member: discord.Member):
 
 @bot.command()
 async def dog():
-   import random 
+    import random 
      
-   choices = ["https://cdn.discordapp.com/attachments/516330147813523458/516596610172715039/image0.jpg","https://cdn.discordapp.com/attachments/509349559194091536/516593490516377600/1543235858976311557054.jpg","https://cdn.discordapp.com/attachments/516330147813523458/516596627868352543/image0.jpg"]
+    choices = ["https://cdn.discordapp.com/attachments/516330147813523458/516596610172715039/image0.jpg","https://cdn.discordapp.com/attachments/509349559194091536/516593490516377600/1543235858976311557054.jpg","https://cdn.discordapp.com/attachments/516330147813523458/516596627868352543/image0.jpg"]
              
-   await bot.say(embed = embed) 
+    await bot.say(embed = embed) 
    
 
             
@@ -370,11 +370,11 @@ async def say(ctx, *, msg = None):
 
 @bot.command()
 async def meme():   
-   import random
+    import random
 
-   choices = ["https://cdn.discordapp.com/attachments/505786728678817794/513637645193183232/dxzlmdubvxy11.jpg","https://assets3.thrillist.com/v1/image/2766357/size/gn-gift_guide_variable_c.jpg","https://cdn.theatlantic.com/assets/media/img/mt/2018/05/shutterstock_297886754/lead_720_405.jpg?mod=1533691461"]
+    choices = ["https://cdn.discordapp.com/attachments/505786728678817794/513637645193183232/dxzlmdubvxy11.jpg","https://assets3.thrillist.com/v1/image/2766357/size/gn-gift_guide_variable_c.jpg","https://cdn.theatlantic.com/assets/media/img/mt/2018/05/shutterstock_297886754/lead_720_405.jpg?mod=1533691461"]
      
-   await bot.say(embed = embed)
+    await bot.say(embed = embed)
     
 
 
