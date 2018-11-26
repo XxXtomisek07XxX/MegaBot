@@ -231,7 +231,7 @@ async def meme():
 async def dog():
    import random 
      
-   choices = ["https://goo.gl/images/phu7fV"]
+   choices = ["https://cdn.discordapp.com/attachments/516330147813523458/516596610172715039/image0.jpg"]
              
 
    
