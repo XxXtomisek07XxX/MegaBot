@@ -221,7 +221,7 @@ async def mute(ctx, member: discord.Member):
       
                 
              
-@bot.command()
+
  
 
 
