@@ -374,7 +374,7 @@ async def meme():
 
    choices = ["https://cdn.discordapp.com/attachments/505786728678817794/513637645193183232/dxzlmdubvxy11.jpg","https://assets3.thrillist.com/v1/image/2766357/size/gn-gift_guide_variable_c.jpg","https://cdn.theatlantic.com/assets/media/img/mt/2018/05/shutterstock_297886754/lead_720_405.jpg?mod=1533691461"]
      
-
+ await bot.say(embed = embed)
     
 
 
