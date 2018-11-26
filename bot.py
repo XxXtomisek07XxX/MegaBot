@@ -225,7 +225,7 @@ async def mute(ctx, member: discord.Member):
 async def meme():   
    import random
 
-   choices = ["https://cdn.theatlantic.com/assets/media/img/mt/2018/05/shutterstock_297886754/lead_720_405.jpg?mod=1533691461","https://assets3.thrillist.com/v1/image/2766357/size/gn-gift_guide_variable_c.jpg","https://cdn.discordapp.com/attachments/505786728678817794/513637645193183232/dxzlmdubvxy11.jpg","https://cdn.discordapp.com/attachments/509349559194091536/516591058239488000/1543235275440-1393565654.jpg"]
+   choices = ["https://cdn.discordapp.com/attachments/505786728678817794/513637645193183232/dxzlmdubvxy11.jpg","https://assets3.thrillist.com/v1/image/2766357/size/gn-gift_guide_variable_c.jpg","https://cdn.theatlantic.com/assets/media/img/mt/2018/05/shutterstock_297886754/lead_720_405.jpg?mod=1533691461"]
  
 
 
@@ -237,7 +237,7 @@ async def dog():
              
 
    
-   await bot.say(random.choice(choices))
+
             
                
 @bot.command(pass_context = True)
