@@ -359,7 +359,7 @@ async def unmute(ctx, member: discord.Member):
    
 @bot.command(pass_context = True)
 async def say(ctx, *, msg = None):
-         await bo
+         await bot.s
          
          if not msg:  await bot.say("napiš text.")
                                    
@@ -377,7 +377,9 @@ async def meme():
    await bot.say(embed=embed)
     
 
-
+@bot.command(pass_context = True)
+async def avatar(ctx, member: discord.Member):
+    await bot.reply("{}".format(member.avatar_url))
  
 
        
