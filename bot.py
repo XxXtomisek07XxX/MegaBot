@@ -359,7 +359,7 @@ async def unmute(ctx, member: discord.Member):
    
 @bot.command(pass_context = True)
 async def say(ctx, *, msg = None):
-         await bot.delete_message(ctx.message)
+         await bo
          
          if not msg:  await bot.say("napiš text.")
                                    
