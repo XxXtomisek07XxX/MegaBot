@@ -356,15 +356,29 @@ async def unmute(ctx, member: discord.Member):
         
         
     
-   
+
+
 @bot.command(pass_context = True)
+@commands.has_permissions(administrator=True)
 async def say(ctx, *, msg = None):
-         await bot.s
+         await bot.delete_message(ctx.message)
+         if not msg: await bot.say("Zadej Text.") 
+        else: await bot.say(msg) 
+        return
+
+
+       
+      
+        
+     
+
+
+
          
-         if not msg:  await bot.say("napiš text.")
-                                   
-         else: await bot.say(msg)
-         return 
+        
+                 
+         
+   
 
     
 
