@@ -364,7 +364,7 @@ async def say(ctx, *, msg = None):
          await bot.delete_message(ctx.message)
          if not msg: await bot.say("Zadej Text.") 
         
-        return
+      
 
 
        
