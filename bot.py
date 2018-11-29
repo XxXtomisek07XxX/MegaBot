@@ -75,7 +75,8 @@ async def help():
 ```hosting``` - aktuální hosting bota
 ```discordbot``` - support server i pro ostatní boty
 ```ping``` - zobrazí ping bota
-```userinfo``` <@hráč> - zobrazí info o určeném (označeném) hráči
+```userinfo <@hráč>``` - Zobrazí info o určeném (označeném) hráči
+```server``` - Zobrazí Info o serveru
 
 :key: Administrátor
 ```ban <@hráč>``` - zabanuje určeného (označeného) hráče
