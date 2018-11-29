@@ -62,41 +62,66 @@ async def discordbot():
   
 @bot.command()
 async def help():
-        await bot.say("""****__Nápověda :mailbox_with_mail:__****       ****Prefix:/****
+        await bot.say("""Nápověda :question:  Aktuální prefix: ```/```
+
+:joy: Zábava
+```fakeban``` - dej si ban!
+```meme``` - pošle vtipné meme
+```osmball <otázka>``` - náhodně odpoví na tvou otázku
+```dog``` - pošle náhodný obrázek psa
+
+:pencil: General
+```support``` - support stránka bota
+```hosting``` - aktuální hosting bota
+```discordbot``` - support server i pro ostatní boty
+```ping``` - zobrazí ping bota
+```userinfo``` <@hráč> - zobrazí info o určeném (označeném) hráči
+
+:key: Administrátor
+```ban <@hráč>``` - zabanuje určeného (označeného) hráče
+```mute <@hráč>``` - označený hráč nebude moct psát do chatu
+```kick <@hráč>``` - vyhodí označeného hráče
+```clear <počet zpráv>``` - smaže určený počet zpráv
+```warn <@hráč>``` - varuje určeného (označeného) hráče
+```unban <@hráč>``` - odbanuje určeného (označeného) hráče
+```bans``` - list zabanovaných hráčů
+```unmute <@hráč>``` - zruší u určeného (označeného hráče) mute
+
+Před každý příkaz dejte prefix, ```/```
         
         
         
       
 
-****Zábava**** :joy:
 
-``` fakeban
- meme
- say
- osmball
- dog
- ```
 
-****General**** :pencil:
 
-``` support
- hosting
- discordbot
- ping
- server
- userinfo```
+
+ 
+
+
+ 
+
+
+
+
  
  
- ****Administrátor**** :key:
  
-``` ban
- mute
- kick
- clear
- warn
- unban
- bans
- unmute``` """)
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
  
     
     
