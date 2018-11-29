@@ -72,7 +72,10 @@ async def help():
 
 ``` fakeban
  meme
- say```
+ say
+ osmball
+ dog
+ ```
 
 ****General**** :pencil:
 
