@@ -87,7 +87,7 @@ async def help():
 ```bans``` - list zabanovaných hráčů
 ```unmute <@hráč>``` - zruší u určeného (označeného hráče) mute
 
-Před každý příkaz dejte prefix, ```/```
+Před každý příkaz dejte prefix, ```/``` """)
         
         
         
