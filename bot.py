@@ -415,7 +415,7 @@ async def osmball():
 
      choices = ["Ano","Ne","Možná"]
    
-          
+     await bot.say(random.choice(choices))
        
  
         
