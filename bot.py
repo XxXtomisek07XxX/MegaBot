@@ -234,7 +234,7 @@ async def mute(ctx, member: discord.Member):
 async def dog():
    import random 
      
-   choices = ["https://cdn.discordapp.com/attachments/516330147813523458/516596610172715039/image0.jpg","https://cdn.discordapp.com/attachments/509349559194091536/516593490516377600/1543235858976311557054.jpg","https://cdn.discordapp.com/attachments/516330147813523458/516596627868352543/image0.jpg"]
+   choices = ["https://cdn.discordapp.com/attachments/516330147813523458/516596610172715039/image0.jpg","https://cdn.discordapp.com/attachments/509349559194091536/516593490516377600/1543235858976311557054.jpg","https://cdn.discordapp.com/attachments/516330147813523458/516596627868352543/image0.jpg","https://cdn.discordapp.com/attachments/516330147813523458/516596610172715039/image0.jpg"]
              
    await bot.say(random.choice(choices))
    
