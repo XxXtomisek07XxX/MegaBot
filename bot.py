@@ -62,33 +62,33 @@ async def discordbot():
   
 @bot.command()
 async def help():
-        await bot.say("""Nápověda :question:  Aktuální prefix: ```/```
+        await bot.say("""Nápověda :question:  Aktuální prefix: ``/``
 
 :joy: Zábava
-```fakeban``` - dej si ban!
-```meme``` - pošle vtipné meme
-```osmball <otázka>``` - náhodně odpoví na tvou otázku
-```dog``` - pošle náhodný obrázek psa
+``fakeban`` - dej si ban!
+``meme`` - pošle vtipné meme
+``osmball <otázka>`` - náhodně odpoví na tvou otázku
+``dog`` - pošle náhodný obrázek psa
 
 :pencil: General
-```support``` - support stránka bota
-```hosting``` - aktuální hosting bota
-```discordbot``` - support server i pro ostatní boty
-```ping``` - zobrazí ping bota
-```userinfo <@hráč>``` - Zobrazí info o určeném (označeném) hráči
-```server``` - Zobrazí Info o serveru
+``support`` - support stránka bota
+``hosting`` - aktuální hosting bota
+``discordbot`` - support server i pro ostatní boty
+``ping`` - zobrazí ping bota
+``userinfo <@hráč>`` - Zobrazí info o určeném (označeném) hráči
+``server`` - Zobrazí Info o serveru
 
 :key: Administrátor
-```ban <@hráč>``` - zabanuje určeného (označeného) hráče
-```mute <@hráč>``` - označený hráč nebude moct psát do chatu
-```kick <@hráč>``` - vyhodí označeného hráče
-```clear <počet zpráv>``` - smaže určený počet zpráv
-```warn <@hráč>``` - varuje určeného (označeného) hráče
-```unban <@hráč>``` - odbanuje určeného (označeného) hráče
-```bans``` - list zabanovaných hráčů
-```unmute <@hráč>``` - zruší u určeného (označeného hráče) mute
+``ban <@hráč>`` - zabanuje určeného (označeného) hráče
+``mute <@hráč>`` - označený hráč nebude moct psát do chatu
+``kick <@hráč>`` - vyhodí označeného hráče
+``clear <počet zpráv>`` - smaže určený počet zpráv
+``warn <@hráč>`` - varuje určeného (označeného) hráče
+``unban <@hráč>`` - odbanuje určeného (označeného) hráče
+``bans`` - list zabanovaných hráčů
+``unmute <@hráč>`` - zruší u určeného (označeného hráče) mute
 
-Před každý příkaz dejte prefix, ```/``` """)
+Před každý příkaz dejte prefix, ``/`` """)
         
         
         
