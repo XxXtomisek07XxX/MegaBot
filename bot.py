@@ -236,7 +236,7 @@ async def dog():
      
    choices = ["https://cdn.discordapp.com/attachments/516330147813523458/516596610172715039/image0.jpg","https://cdn.discordapp.com/attachments/509349559194091536/516593490516377600/1543235858976311557054.jpg","https://cdn.discordapp.com/attachments/516330147813523458/516596627868352543/image0.jpg"]
              
-   await bot.say(choice(choices))
+   await bot.say(random.choice(choices))
    
 
             
@@ -396,7 +396,7 @@ async def meme():
    choices = ["https://imgur.com/a/12e8A1L", "https://imgur.com/a/gTL4Edp", "https://imgur.com/a/jkf80vH", "https://imgur.com/a/4B1WEo0"]
                                      
  
-   await bot.say(choice(choices))
+   await bot.say(random.choice(choices))
 
  
      
