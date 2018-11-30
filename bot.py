@@ -90,9 +90,13 @@ async def help():
 
 Před každý příkaz dejte prefix, ``/`` """)
        
-    
- 
-    return await bot.say(embed = embed)   
+  embed=discord.Embed(title="Nápověda"
+        await bot.say(embed = embed)
+     
+        
+        
+
+
         
         
       
