@@ -244,16 +244,22 @@ async def userinfo(ctx, user: discord.Member):
      
 
   
-@bot.command(pass_context=True)
-async def say(ctx, *args):
+@bot.command(pass_context = True)
+@commands.has_permissuons(manage_messages=True)
+async def say(ctx, *, msg = None):
+         await bot.delete_message(ctx.message)
+         if not msg await: bot.say("Prosím řekněte co mam odeslat")
+         else: await bot.say(msg)
+         return
 
-    argstr = " ".join(args)
-    r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
-    embed = discord.Embed(title="say",  (color = discord.Color((r << 16) + (g << 8) + b))
-    text = argstr
-    color = discord.Color((r << 16) + (g << 8) + b)
-    await bot.send_message(ctx.message.channel, embed=embed(color = color, description=text))
-    await bot.delete_message(ctx.message)
+
+    
+
+
+
+
+   
+ 
    
 
    
