@@ -249,6 +249,7 @@ async def say(ctx, *args):
 
     argstr = " ".join(args)
     r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
+    embed = discord.Embed(title="say",  (color = discord.Color((r << 16) + (g << 8) + b))
     text = argstr
     color = discord.Color((r << 16) + (g << 8) + b)
     await bot.send_message(ctx.message.channel, embed=embed(color = color, description=text))
