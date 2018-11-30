@@ -102,7 +102,7 @@ async def update():
      
      ```Say Bylo Pozastaveno!```
      
-     ****-Majitel Bota[Syn#1308]****
+     ****-Majitel Bota[Syn#1308]**** """)
                    
                    
                    
