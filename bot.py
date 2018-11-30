@@ -106,7 +106,49 @@ async def omfg():
      
      
      
-     
+@bot.command(pass_context = True)
+@commands.has_permissions(administrator=True)
+async def setup(ctx):
+    author = ctx.message.author
+    server = ctx.message.server
+    mod_perms = discord.Permissions(manage_messages=True, kick_members=True, manage_nicknames =True,mute_members=True)
+    admin_perms = discord.Permissions(ADMINISTRATOR=True)
+
+    await bot.create_role(author.server, name="Owner", permissions=admin_perms)
+    await bot.create_role(author.server, name="Admin", permissions=admin_perms
+    
+    await bot.create_role(author.server, name="Senior Moderator", permissions=mod_perms)
+    await bot.create_role(author.server, name="G.O.H")
+    await bot.create_role(author.server, name="Moderator", permissions=mod_perms)
+    await bot.create_role(author.server, name="Muted")
+    
+    await bot.create_role(author.server, name="Friend of Owner")
+    await bot.create_role(author.server, name="Verified")
+    everyone_perms = discord.PermissionOverwrite(send_messages=False, read_messages=True)
+    everyone = discord.ChannelPermissions(target=server.default_role, overwrite=everyone_perms)
+    user_perms = discord.PermissionOverwrite(read_messages=True)
+    user = discord.ChannelPermissions(target=server.default_role, overwrite=user_perms)
+    private_perms = discord.PermissionOverwrite(read_messages=False)
+    private = discord.ChannelPermissions(target=server.default_role, overwrite=private_perms)    
+    await bot.create_channel(server, '🎉welcome🎉',everyone)
+    await bot.create_channel(server, '🎯rules🎯',everyone)
+    await bot.create_channel(server, '🎥featured-content🎥',everyone)
+    await bot.create_channel(server, '📢announcements📢',everyone)
+    await bot.create_channel(server, '📢vote_polls📢',everyone)
+    await bot.create_channel(server, 'private_chat',private)
+    await bot.create_channel(server, '🎮general_chat🎮',user)
+    await bot.create_channel(server, '🎮general_media🎮',user)
+    await bot.create_channel(server, '👍bots_zone👍',user)
+    
+    await bot.create_channel(server, '🎥youtube_links🎥',user)
+    await bot.create_channel(server, '🎥giveaway_links🎥',user)
+    await bot.create_channel(server, '🎥other_links🎥',user)
+    await bot.create_channel(server, '🔥Music Zone🔥', type=discord.ChannelType.voice)
+    await bot.create_channel(server, '🔥music_command🔥s',user)
+    await bot.create_channel(server, '🔥Chill Zone🔥', type=discord.ChannelType.voice)
+    
+        
+      
                    
                    
                    
