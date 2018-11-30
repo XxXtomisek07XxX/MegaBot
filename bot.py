@@ -483,7 +483,9 @@ async def cat():
      import random
      
      choices = ["https://cdn.discordapp.com/attachments/487874661691162644/518119499837341716/IMG_20181130_184136.png","https://cdn.discordapp.com/attachments/517336481568653312/518122278656147478/sanel.jpg","https://cdn.discordapp.com/attachments/516363610415431683/518122740029587477/dad.jpg","https://cdn.discordapp.com/attachments/516363610415431683/518123103109382146/atat.jpg","https://cdn.discordapp.com/attachments/516363610415431683/518123349746909194/ada.jpg"]
-        
+      
+     await bot.say(random.choice(choices))
+                   
      
   
         
