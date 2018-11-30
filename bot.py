@@ -21,7 +21,7 @@ bot.remove_command('help')
 @bot.event
 async def on_ready():
      await bot.change_presence(game=discord.Game(name= "/help"))
-     
+    
    
         
 
@@ -89,6 +89,7 @@ async def help():
 ``unmute <@hráč>`` - zruší u určeného (označeného hráče) mute
 
 Před každý příkaz dejte prefix, ``/`` """)
+         await bot.say(embed=embed)
         
         
         
