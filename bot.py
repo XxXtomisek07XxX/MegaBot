@@ -69,7 +69,8 @@ async def help():
 ``meme`` - pošle vtipné meme
 ``osmball <otázka>`` - náhodně odpoví na tvou otázku
 ``dog`` - pošle náhodný obrázek psa
-
+``cat`` - Pošle náhodný obrázek kočky
+``asktrump`` - Zábavně ti odpoví na otázku
 :pencil: General
 ``support`` - support stránka bota
 ``hosting`` - aktuální hosting bota
@@ -92,17 +93,17 @@ Před každý příkaz dejte prefix, ``/`` """)
        
 @bot.command()
 async def omfg():
-     await bot.say("""Update 1.0.1🎉
+     await bot.say("""Update 1.0.2🔔
      
-     ```Nové Help```
+     ``Nový Command cat``
      
-     ```Nový Command Dog```
-     
-     ```meme Opraveno!```
-     
-     ```Say Bylo Pozastaveno!```
+     ``Nový Command asktrump``
      
      ****-Majitel Bota[Syn#1308]**** """)
+     
+     
+     
+     
                    
                    
                    
@@ -469,8 +470,19 @@ async def osmball():
    
      await bot.say(random.choice(choices))
        
- 
-        
+@bot.command()
+async def asktrump():
+     import random
+     
+     choices = ["Ano!","Taco!!!","Kaufland!","Ne!","Trump!","Lídl!"]
+     
+     await bot.say(random.choice(choices))
+     
+@bot.command()
+async def cat():
+     import random
+     
+     choices = ["https://cdn.discordapp.com/attachments/487874661691162644/518119499837341716/IMG_20181130_184136.png","https://cdn.discordapp.com/attachments/517336481568653312/518122278656147478/sanel.jpg","https://cdn.discordapp.com/attachments/516363610415431683/518122740029587477/dad.jpg","https://cdn.discordapp.com/attachments/516363610415431683/518123103109382146/atat.jpg","https://cdn.discordapp.com/attachments/516363610415431683/518123349746909194/ada.jpg"]
         
      
   
