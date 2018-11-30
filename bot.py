@@ -248,7 +248,7 @@ async def userinfo(ctx, user: discord.Member):
 @commands.has_permissuons(manage_messages=True)
 async def say(ctx, *, msg = None):
          await bot.delete_message(ctx.message)
-         if not msg await: bot.say("Prosím řekněte co mam odeslat")
+         if not msg: await bot.say("Prosím řekněte co mam odeslat")
          else: await bot.say(msg)
          return
 
