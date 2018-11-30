@@ -118,7 +118,7 @@ async def setup(ctx):
     await bot.create_role(author.server, name="Admin", permissions=admin_perms
     
     
-    await bot.create_role(author.server, name="G.O.H")
+    
     await bot.create_role(author.server, name="Moderator", permissions=mod_perms)
     await bot.create_role(author.server, name="Muted")
     
