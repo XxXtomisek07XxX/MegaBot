@@ -22,7 +22,7 @@ bot.remove_command('help')
 async def on_ready():
      await bot.change_presence(game=discord.Game(name= "/help"))
      print('The bot is ready!')
-     print(bot.ussr.nane)
+     print(bot.user.nane)
      print(bot.user.id)
     
    
