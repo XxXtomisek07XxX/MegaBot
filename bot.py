@@ -91,7 +91,7 @@ async def help():
 Před každý příkaz dejte prefix, ``/`` """)
        
 @bot.command()
-async def update():
+async def omfg():
      await bot.say("""Update 1.0.1🎉
      
      ```Nové Help```
