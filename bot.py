@@ -90,8 +90,24 @@ async def help():
 
 Před každý příkaz dejte prefix, ``/`` """)
        
-  embed=discord.Embed(title="Nápověda")
-        await bot.say(embed = embed)
+@bot.command()
+async def update():
+     await bot.say("""Update 1.0.1🎉
+     
+     ```Nové Help```
+     
+     ```Nový Command Dog```
+     
+     ```meme Opraveno!```
+     
+     ```Say Bylo Pozastaveno!```
+     
+     ****-Majitel Bota[Syn#1308]****
+                   
+                   
+                   
+                   
+        
      
         
         
