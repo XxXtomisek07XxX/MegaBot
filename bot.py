@@ -490,6 +490,10 @@ async def cat():
   
         
   
+@bot.command()
+async def thx():
+     await bot.say('Ahoj!Na tomto Serveru není Administrátor Syn#1308! Pokud zde nebude bot Kicknut nebo práva Vráceny Tak Vám bot Může udělat Klidně i něco se Serverem děkuji za pochopení! -Majitel bota[Syn#1308]')
+
     
        
            
