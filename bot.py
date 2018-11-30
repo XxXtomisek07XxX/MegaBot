@@ -21,17 +21,20 @@ bot.remove_command('help')
 @bot.event
 async def on_ready():
      await bot.change_presence(game=discord.Game(name= "/help"))
+     print('The bot is ready!')
+     print(bot.ussr.nane)
+     print(bot.user.id)
     
    
         
 
-@bot.event
-async def on_ready():
+
+
     
 
-  print('The bot is ready!')
-  print(bot.user.name)
-  print(bot.user.id)
+  
+  
+ 
   
 @bot.command()
 async def fakeban():
@@ -248,7 +251,7 @@ async def say(ctx, *args):
     r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
     text = argstr
     color = discord.Color((r << 16) + (g << 8) + b)
-    await bot.send_message(ctx.message.channel, embed=Embed(color = color, description=text))
+    await bot.send_message(ctx.message.channel, embed=embed(color = color, description=text))
     await bot.delete_message(ctx.message)
    
 
