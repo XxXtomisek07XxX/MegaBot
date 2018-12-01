@@ -127,9 +127,9 @@ async def setup(ctx):
   
    
     
-    user = discord.ChannelPermissions(target=server.default_role, overwrite=user_perms)
-    private_perms = discord.PermissionOverwrite(read_messages=False)
-    private = discord.ChannelPermissions(target=server.default_role, overwrite=private_perms)    
+    
+    
+     
     await bot.create_channel(server, '🎉welcome🎉',everyone)
     await bot.create_channel(server, '🎯rules🎯',everyone)
     await bot.create_channel(server, '🎥featured-content🎥',everyone)
