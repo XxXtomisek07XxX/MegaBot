@@ -149,6 +149,14 @@ async def omfg():
     
     
         
+
+@bot.command(pass_context=True)
+@commands.has_permissions(kick_members=True)
+async def joinvoice(ctx):
+    author = ctx.message.author
+    channel = author.voice_channel
+    await bot.join_voice_channel(channel)
+
       
                    
                    
