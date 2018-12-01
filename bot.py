@@ -130,22 +130,22 @@ async def setup(ctx):
     
     
      
-    await bot.create_channel(server, '🎉welcome🎉',everyone)
-    await bot.create_channel(server, '🎯rules🎯',everyone)
-    await bot.create_channel(server, '🎥featured-content🎥',everyone)
-    await bot.create_channel(server, '📢announcements📢',everyone)
-    await bot.create_channel(server, '📢vote_polls📢',everyone)
-    await bot.create_channel(server, 'private_chat',private)
-    await bot.create_channel(server, '🎮general_chat🎮',user)
-    await bot.create_channel(server, '🎮general_media🎮',user)
-    await bot.create_channel(server, '👍bots_zone👍',user)
+   
     
-    await bot.create_channel(server, '🎥youtube_links🎥',user)
-    await bot.create_channel(server, '🎥giveaway_links🎥',user)
-    await bot.create_channel(server, '🎥other_links🎥',user)
-    await bot.create_channel(server, '🔥Music Zone🔥', type=discord.ChannelType.voice)
-    await bot.create_channel(server, '🔥music_command🔥s',user)
-    await bot.create_channel(server, '🔥Chill Zone🔥', type=discord.ChannelType.voice)
+   
+    
+    
+    
+    
+  
+    
+    
+    
+    
+    
+ 
+    
+    
     
         
       
