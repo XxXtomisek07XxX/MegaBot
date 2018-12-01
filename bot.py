@@ -123,7 +123,7 @@ async def setup(ctx):
     
     
     
-    await bot.create_role(author.server, name="Verified")
+    
     everyone_perms = discord.PermissionOverwrite(send_messages=False, read_messages=True)
     everyone = discord.ChannelPermissions(target=server.default_role, overwrite=everyone_perms)
     user_perms = discord.PermissionOverwrite(read_messages=True)
