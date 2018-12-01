@@ -125,7 +125,7 @@ async def setup(ctx):
     
     
   
-    everyone = d
+    
     user_perms = discord.PermissionOverwrite(read_messages=True)
     user = discord.ChannelPermissions(target=server.default_role, overwrite=user_perms)
     private_perms = discord.PermissionOverwrite(read_messages=False)
