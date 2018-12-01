@@ -106,16 +106,17 @@ async def omfg():
      
      
      
-@bot.command(pass_context = True)
-@commands.has_permissions(administrator=True)
-async def setup(ctx):
-    author = ctx.message.author
-    server = ctx.message.server
-    mod_perms = discord.Permissions(manage_messages=True, kick_members=True, manage_nicknames =True,mute_members=True)
-    admin_perms = discord.Permissions(ADMINISTRATOR=True)
 
-    await bot.create_role(author.server, name="Owner", permissions=admin_perms)
-    await bot.create_role(author.server, name="Admin", permissions=admin_perms
+
+
+   
+  
+    
+    
+
+    
+    
+                          
     
     
     
