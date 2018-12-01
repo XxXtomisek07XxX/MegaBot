@@ -25,8 +25,14 @@ async def on_ready():
      print(bot.user.name)
      print(bot.user.id)
     
-   
-        
+@bot.command(pass_context = True)
+async def stop(ctx):
+    for x in bot.voice_clients:
+        if(x.server == ctx.message.server):
+            return await x.disconnect()
+
+    return await bot.say("Přestal jsem hrát v Roomce!")  
+      
 
 
 
