@@ -111,27 +111,27 @@ async def omfg():
      ****-Majitel Bota[Syn#1308]**** """)
      
      
-@bot.command(pass_context = True)
-async def play(ctx, *, url):
-    author = ctx.message.author
-    voice_channel = author.voice_channel
-    try:
-        vc = await bot.join_voice_channel(voice_channel)
-        msg = await bot.say("Loading...")
-        player = await vc.create_ytdl_player("ytsearch:" + url)
-        player.start()
-        await bot.say("Succesfully Loaded ur song!")
-        await bot.delete_message(msg)
-    except Exception as e:
-        print(e)
-        await bot.say("Reconnecting")
-        for x in bot.voice_clients:
-            if(x.server == ctx.message.server):
-                await x.disconnect()
-                nvc = await bot.join_voice_channel(voice_channel)
-                msg = await bot.say("Loading...")
-                player2 = await nvc.create_ytdl_player("ytsearch:" + url)
-                player2.start()
+
+ 
+
+   
+
+
+        
+        
+        
+   
+        
+   
+      
+     
+        
+            
+               
+              
+              
+                
+               
  
 
 
