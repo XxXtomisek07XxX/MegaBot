@@ -67,7 +67,7 @@ async def hosting():
   
 @bot.command()
 async def discordbot():
-  await bot.say('https://discord.gg/8dbfhWU')
+  await bot.say('https://discord.gg/CtCCjE8')
   
 @bot.command()
 async def help():
