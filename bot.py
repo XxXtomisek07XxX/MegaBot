@@ -33,7 +33,7 @@ async def stop(ctx):
 
     return await bot.say("Přestal jsem hrát v Roomce!")  
       
-
+t
 
 
     
