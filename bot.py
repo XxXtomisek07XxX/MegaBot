@@ -25,15 +25,15 @@ async def on_ready():
      print(bot.user.name)
      print(bot.user.id)
     
-@bot.command(pass_context = True)
-async def stop(ctx):
-    for x in bot.voice_clients:
-        if(x.server == ctx.message.server):
-            return await x.disconnect()
 
-    return await bot.say("Přestal jsem hrát v Roomce!")  
+
+  
+       
+           
+
+   
       
-t
+
 
 
     
@@ -177,12 +177,12 @@ async def omfg():
     
         
 
-@bot.command(pass_context=True)
-@commands.has_permissions(kick_members=True)
-async def joinvoice(ctx):
-    author = ctx.message.author
-    channel = author.voice_channel
-    await bot.join_voice_channel(channel)
+
+
+
+    
+    
+    
 
       
                    
