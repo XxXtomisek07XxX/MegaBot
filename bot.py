@@ -35,7 +35,7 @@ async def stop(ctx):
       
 
 
-t
+
     
 
   
