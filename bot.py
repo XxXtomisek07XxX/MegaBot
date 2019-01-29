@@ -99,6 +99,11 @@ async def help():
 ``unmute <@hráč>`` - zruší u určeného (označeného hráče) mute
 
 Před každý příkaz dejte prefix, ``/`` """)
+         embed = discord.Embed(description = "%s Dostal jsi warn!"%member.name, color = 0xF00000)
+    return await bot.say(embed = embed)
+ 
+    
+
        
 @bot.command()
 async def omfg():
