@@ -116,6 +116,11 @@ async def omfg():
      ``Nový Command asktrump``
      
      ****-Majitel Bota[Syn#1308]**** """)
+
+
+@bot.command()
+async def brodiště():
+     await bot.say("""👊""")
      
      
 
