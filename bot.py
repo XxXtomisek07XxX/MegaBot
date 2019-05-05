@@ -80,6 +80,7 @@ async def help():
 ``dog`` - pošle náhodný obrázek psa
 ``cat`` - Pošle náhodný obrázek kočky
 ``asktrump`` - Zábavně ti odpoví na otázku
+``brofist`` - Pošle Brofist
 :pencil: General
 ``support`` - support stránka bota
 ``hosting`` - aktuální hosting bota
