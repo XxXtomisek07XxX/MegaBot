@@ -121,7 +121,11 @@ async def omfg():
 
 @bot.command()
 async def brofist():
-     await bot.say("""👊 Sub to PewDiePie!""")
+     await bot.say("""👊 Sub to PewDiePie!
+     
+     
+     
+    https://cdn.discordapp.com/attachments/472480088840077342/576787787445960722/1449680_1-1.jpg """)
      
      
 
