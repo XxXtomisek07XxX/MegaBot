@@ -120,7 +120,7 @@ async def omfg():
 
 
 @bot.command()
-async def brodiště():
+async def brofist():
      await bot.say("""👊 Sub to PewDiePie!""")
      
      
