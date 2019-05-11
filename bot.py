@@ -125,7 +125,10 @@ async def brofist():
      
      
      
-    https://cdn.discordapp.com/attachments/472480088840077342/576787787445960722/1449680_1-1.jpg """)
+    https://cdn.discordapp.com/attachments/472480088840077342/576787787445960722/1449680_1-1.jpg
+    
+    
+   https://cdn.discordapp.com/attachments/501003500008767498/576789207910187028/3jtdjfg4ee601.png """)
      
      
 
