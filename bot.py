@@ -121,7 +121,7 @@ async def omfg():
 
 @bot.command()
 async def brofist():
-     await bot.say("""👊 Sub to PewDiePie!
+     await bot.say("""👊 Sub to PewDiePie Yes!
      
      
      
