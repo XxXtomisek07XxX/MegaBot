@@ -90,9 +90,9 @@ async def help():
 ``server`` - Zobrazí Info o serveru
 
 :key: Administrátor
-``ban <@hráč>`` - zabanuje určeného (označeného) hráče
+``ban <@hráč>`` - zabanuje určeného (označeného) hráče (Comming Soon)
 ``mute <@hráč>`` - označený hráč nebude moct psát do chatu
-
+``kick <@hráč>`` - Vyhodí Uživatele (Comming Soon)
 ``clear <počet zpráv>`` - smaže určený počet zpráv
 ``warn <@hráč>`` - varuje určeného (označeného) hráče
 ``unban <@hráč>`` - odbanuje určeného (označeného) hráče
@@ -271,8 +271,8 @@ async def omfg():
    
     
 
-@bot.command(pass_context=True)  
-@commands.has_permissions(ban_members=True)
+
+
 
 
 
@@ -281,16 +281,16 @@ async def omfg():
 
     
     
-        await bot.ban(user)
-        await bot.say(user.name+' byl Zabanován. Měj se '+user.name+'!')
+      
+       
 
-    except discord.Forbidden:
+   
 
-        await bot.say('Permission denied.')
-        return
-    except discord.HTTPException:
-        await bot.say('Ban nebyl Úspěšný.')
-        return		
+  
+      
+
+       
+        		
 
   
 
