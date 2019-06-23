@@ -80,7 +80,7 @@ async def help():
 ``dog`` - pošle náhodný obrázek psa
 ``cat`` - Pošle náhodný obrázek kočky
 ``asktrump`` - Zábavně ti odpoví na otázku
-``brofist`` - Pošle Brofist
+
 :pencil: General
 ``support`` - support stránka bota
 ``hosting`` - aktuální hosting bota
@@ -119,16 +119,16 @@ async def omfg():
      ****-Majitel Bota[Syn#1308]**** """)
 
 
-@bot.command()
-async def brofist():
-     await bot.say("""👊 Sub to PewDiePie Yes!
+
+
+   
      
      
      
-    https://cdn.discordapp.com/attachments/472480088840077342/576787787445960722/1449680_1-1.jpg
+  
     
     
-   https://cdn.discordapp.com/attachments/501003500008767498/576789207910187028/3jtdjfg4ee601.png """)
+ 
      
      
 
@@ -259,7 +259,7 @@ async def kick(ctx,user:discord.Member):
     if user.server_permissions.kick_members:
         await bot.say('**Nemáš Oprávnění na kick a nebo je dotyčný Administrátor**')
         return
-    
+
     try:
         await bot.kick(user)
         await bot.say(user.name+' byl kicknut. Měj se '+user.name+'!')
