@@ -250,11 +250,11 @@ async def omfg():
  
  
     
-    
-@bot.command(pass_context=True)  
-@commands.has_permissions(kick_members=True)     
+  
 
-async def kick(ctx,user:discord.Member):
+    
+
+
 
     
    
@@ -373,16 +373,16 @@ async def say(ctx, *, msg = None):
   
 
 
-@bot.command(pass_context = True)
-async def mute(ctx, member: discord.Member):
-     if ctx.message.author.server_permissions.administrator or ctx.message.author.id == '194151340090327041':
-        role = discord.utils.get(member.server.roles, name='Muted')
+
+
+    
+      
        
-        embed=discord.Embed(title="User byl Mutnut!", description="{0} dostal/a jsi mute od {1}!".format(member, ctx.message.author), color=0xff00f6)
-        await bot.say(embed = embed)
-     else:
-        embed=discord.Embed(title="Permission Denied.", description="Nemáš práva na mute a nebo Je Daný člověk Administrátor.", color=0xff00f6)
-        await bot.say(embed = embed)
+      
+       
+  
+
+       
 
 
 
