@@ -272,7 +272,7 @@ async def omfg():
     
 
 @bot.command(pass_context=True)  
-@commands.has_permissions(ban_members=TrueTr
+@commands.has_permissions(ban_members=True)
 
 
 
