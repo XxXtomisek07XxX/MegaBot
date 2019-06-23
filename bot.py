@@ -280,7 +280,7 @@ async def omfg():
        
 
     
-    try:
+    
         await bot.ban(user)
         await bot.say(user.name+' byl Zabanován. Měj se '+user.name+'!')
 
