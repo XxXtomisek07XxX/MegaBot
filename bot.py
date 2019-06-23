@@ -256,7 +256,7 @@ async def omfg():
 
 async def kick(ctx,user:discord.Member):
 
-    if us
+    
    
      
 
