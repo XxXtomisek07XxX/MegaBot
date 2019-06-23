@@ -579,7 +579,7 @@ async def avatar(ctx, member: discord.Member):
 
        
 @bot.command()
-async def osmball():
+async def osmball(): 
      import random
 
      choices = ["Ano","Ne","Možná"]
