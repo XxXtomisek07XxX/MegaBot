@@ -278,7 +278,7 @@ async def ban(ctx,user:discord.Member):
 
     if user.server_permissions.ban_members:
         await bot.say('**Nemáš Právo na ban a nebo je dotyčný Administrátor!**')
-        return
+        
 
     try:
         await bot.ban(user)
