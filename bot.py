@@ -92,7 +92,7 @@ async def help():
 :key: Administrátor
 ``ban <@hráč>`` - zabanuje určeného (označeného) hráče
 ``mute <@hráč>`` - označený hráč nebude moct psát do chatu
-``kick <@hráč>`` - vyhodí označeného hráče
+
 ``clear <počet zpráv>`` - smaže určený počet zpráv
 ``warn <@hráč>`` - varuje určeného (označeného) hráče
 ``unban <@hráč>`` - odbanuje určeného (označeného) hráče
@@ -260,21 +260,21 @@ async def omfg():
    
      
 
-    try:
-        await bot.kick(user)
-        await bot.say(user.name+' byl kicknut. Měj se '+user.name+'!')
-        await bot.delete_message(ctx.message)
+ 
+      
+     
+        
 
-    except discord.Forbidden:
-        await bot.say('Permission denied.')
-        return
+ 
+       
+      
    
     
 
 @bot.command(pass_context=True)  
-@commands.has_permissions(ban_members=True) 
+@commands.has_permissions(ban_members=TrueTr
 
-async def ban(ctx,user:discord.Member):
+
 
 
        
